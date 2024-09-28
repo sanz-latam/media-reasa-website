@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Aka-AcidGR-Compacta';
+    src:url('Aka-AcidGR-Compacta.ttf.woff') format('woff'),
+        url('Aka-AcidGR-Compacta.ttf.svg#Aka-AcidGR-Compacta') format('svg'),
+        url('Aka-AcidGR-Compacta.ttf.eot'),
+        url('Aka-AcidGR-Compacta.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Likhari_B-Normal';
+    src:url('Likhari_B-Normal.ttf.woff') format('woff'),
+        url('Likhari_B-Normal.ttf.svg#Likhari_B-Normal') format('svg'),
+        url('Likhari_B-Normal.ttf.eot'),
+        url('Likhari_B-Normal.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    /* font-family: 'WeezerFont', sans-serif; */
+    font-family: "Space Grotesk", sans-serif;
+    /* text-transform: uppercase; */
+}
+h2 {
+    font-size: 12px;
+    display: block;
+    font-weight: 300;
+}
+a, s {
+    text-decoration: none;
+}
