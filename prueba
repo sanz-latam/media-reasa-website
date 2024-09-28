@@ -1,0 +1,83 @@
+   <?php
+$fb = new \Facebook\Facebook([
+    'app_id' => '1657226455110949',
+    'app_secret' => 'd926782647f3eab3643a2a0f2695c03c',
+    'default_graph_version' => 'v2.10',
+    //'default_access_token' => '{access-token}', // optional
+  ]);
+  
+  try {
+    // Get the \Facebook\GraphNodes\GraphUser object for the current user.
+    // If you provided a 'default_access_token', the '{access-token}' is optional.
+    $response = $fb->get('/me', 'EAAXjPRorVSUBOxOH0zLm8sY2KstSOq8Pz6lzly0gH2fbjZCcucTLZBZBK7dODylDOD5ZCVhyq34M8dPBpZCm9xHAjroLYd6UulnRHaZAT0KyRDAIwp8NvdhcGBktHBA3oFgDCxAmiVzjOZApevBNWi8Q7EEZB4hEQqe227ZCZBPnZCuhGTtoqpY3NGzkKgTZATyQfAz1hPtbB0K8');
+  } catch(\Facebook\Exceptions\FacebookResponseException $e) {
+    // When Graph returns an error
+    echo 'Graph returned an error: ' . $e->getMessage();
+    exit;
+  } catch(\Facebook\Exceptions\FacebookSDKException $e) {
+    // When validation fails or other local issues
+    echo 'Facebook SDK returned an error: ' . $e->getMessage();
+    exit;
+  }
+  
+  $me = $response->getGraphUser();
+  echo 'Logged in as ' . $me->getName();
+// $accessToken = 'EAAXjPRorVSUBO5ZC47zmVd0qc1Euhp4cIvoiUp1ZCMMVHhXdAc0a6aUSZAmHklcu4YzpQqyGVtVTpZBZBpVqpHNXUIisLQ6ZCth8ACdDTNtNn9sCvcJC6B9bYJMNzjSd2VjSZB5nAMziOYKMZCuJky5MMpgZAs0UxMJInZAxXUZACcos5ha50i3Npn2lZCDCI0ePsUmkxgfvEEI5'; // Replace with your actual access token
+// $adAccountId = 'act_1771134609990368'; // Replace with your actual ad account ID
+
+// try {
+//     // Make a request to the Graph API endpoint to retrieve campaigns
+//     $response = $fb->get('/' . $adAccountId . '/campaigns', $accessToken);
+
+//     // Process the response
+//     $campaigns = $response->getGraphEdge();
+
+//     // Output campaign data
+//     foreach ($campaigns as $campaign) {
+//         echo 'Campaign ID: ' . $campaign['id'] . '<br>';
+//         echo 'Campaign Name: ' . $campaign['name'] . '<br>';
+//         echo 'Status: ' . $campaign['status'] . '<br>';
+//         echo '<hr>';
+//     }
+// } catch (FacebookResponseException $e) {
+//     echo 'Graph returned an error: ' . $e->getMessage();
+// } catch (FacebookSDKException $e) {
+//     echo 'Facebook SDK returned an error: ' . $e->getMessage();
+// }
+// use GuzzleHttp\Client;
+
+// $app_id = '1657226455110949';
+// $app_secret = 'd926782647f3eab3643a2a0f2695c03c';
+// $access_token = 'EAAXjPRorVSUBOxOH0zLm8sY2KstSOq8Pz6lzly0gH2fbjZCcucTLZBZBK7dODylDOD5ZCVhyq34M8dPBpZCm9xHAjroLYd6UulnRHaZAT0KyRDAIwp8NvdhcGBktHBA3oFgDCxAmiVzjOZApevBNWi8Q7EEZB4hEQqe227ZCZBPnZCuhGTtoqpY3NGzkKgTZATyQfAz1hPtbB0K8
+//     ';
+
+// $ad_account_id = '1771134609990368';
+// $api_endpoint = "https://graph.facebook.com/v14.0/$ad_account_id/insights";
+
+// $client = new Client();
+
+// try {
+//     $response = $client->request('GET', $api_endpoint, [
+//         'headers' => [
+//             'Authorization' => 'Bearer ' . $access_token,
+//             'Content-Type' => 'application/json',
+//         ],
+//         'query' => [
+//             'level' => 'campaign',
+//             'fields' => 'campaign_name,spend,impressions',
+//             // Add more fields or parameters as needed
+//         ],
+//     ]);
+
+//     if ($response->getStatusCode() == 200) {
+//         $campaign_stats = json_decode($response->getBody(), true);
+//         echo '<pre>';
+//         print_r($campaign_stats);
+//         echo '</pre>';
+//     } else {
+//         echo 'Error: Unable to retrieve campaign statistics. Status code ' . $response->getStatusCode();
+//     }
+// } catch (Exception $e) {
+//     echo 'Caught exception: ' . $e->getMessage();
+// }
+?>
