@@ -599,7 +599,7 @@
 .cuadro:after {
     border-radius: 2px;
     bottom: -2vmin;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+
     content: "";
     left: -2vmin;
     position: absolute;
