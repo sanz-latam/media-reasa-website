@@ -301,7 +301,7 @@ footer > div:nth-of-type(4) > div > div:nth-of-type(2)::before {
 
 @media (min-width: 1024px) {
     footer {
-        height: 30vh;
+        height: 40vh;
         grid-template-columns: repeat(3, max-content);
         padding: 40px;
     }
