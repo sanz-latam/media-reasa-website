@@ -539,9 +539,10 @@
     .vitrina > div:nth-of-type(1) > div:nth-of-type(n+2) > div:nth-of-type(2) {
         width: 40%;
    }
-        .diapositivas > div > div > div:nth-of-type(2).diagonal > div.marcas > div > div{
+       .diapositivas > div > div > div:nth-of-type(2).diagonal > div.marcas > div > div{
         display: grid;
 }
+
 }
 @media (min-width: 1200px) {
     .vitrina > div:nth-of-type(1) > div:nth-of-type(1) {
@@ -1916,7 +1917,4 @@
     .cuadro {
         width: 85%;
    }
-   .diapositivas > div > div > div:nth-of-type(2).diagonal > div.marcas > div > div{
-        display: grid;
-}
 }
