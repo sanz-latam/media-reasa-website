@@ -1909,6 +1909,25 @@
 }
     
 }
+
+@media (min-width: 1536px) {
+  .valvoline > div:nth-of-type(2) > img {
+        width: 26%;
+    }
+
+    .vitrina > div:nth-of-type(1) > div:nth-of-type(1) {
+        grid-template-columns: repeat(2, 300px);
+    }
+    .vitrina > div:nth-of-type(1) > div:nth-of-type(n+2) > div:nth-of-type(2) {
+        left: 68%;
+        width: 44%;
+    }
+
+    .diapositivas > div > div > div:nth-of-type(2).diagonal > div.marcas > div {
+    grid-template-columns: repeat(3, 1fr);
+    }
+ }
+
 @media (min-width: 1920px) {
     .diapositivas > div > div > div:nth-of-type(2).diagonal > h1 {
         font-size: 140px;
