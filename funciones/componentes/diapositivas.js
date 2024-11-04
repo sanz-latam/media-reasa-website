@@ -138,7 +138,7 @@ agregarInteracciones();
 // $('.contenido').click(function(){
 //     $(this).removeClass('activo');
 // });
-$('.diapositivas img').click(function(){
+$('.diapositivas span').click(function(){
     $('.contenido').addClass('activo');
     $('.contenido').children('div').children('div').removeClass('activo');
     $('.contenido').children('div').children('div').eq($(this).parent().index()).addClass('activo');
