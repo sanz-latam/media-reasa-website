@@ -155,6 +155,7 @@ $('.cuadro > div:nth-of-type(1) > div').mouseover(function(){
 $('.marcas > div > div').on('click', function(){
     $('.diapositivas > div > div').removeClass('activo');
     $('.diapositivas > div').children('div').eq($(this).index() + 1).find('img').click();
+    $('.contenido').removeClass('activo');
 });
 $('header > div > img').on('click', function(){
     $('.diapositivas > ul').removeClass('activo');
