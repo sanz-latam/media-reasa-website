@@ -145,7 +145,7 @@ $('.diapositivas span').click(function(){
     map.resize();
 });
 $('.cuadro > div:nth-of-type(1) > div').mouseover(function(){
-    if ($(window).width() < 425) {
+    if ($(window).width() <= 425) {
         $(this).parent().removeClass('activo');
         $('.cuadro > div:nth-of-type(n+2) > div').removeClass('oculto');
     }
