@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent; 
     scrollbar-width: none;
     margin: 0;
 }
