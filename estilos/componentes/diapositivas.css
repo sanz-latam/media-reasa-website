@@ -319,7 +319,7 @@
 .vitrina > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(3) > div:nth-of-type(2) > h2, .vitrina > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(3) > div:nth-of-type(2) > h2 {
    /* font: normal normal normal 21px/55% Aka-AcidGR-Compacta, sans-serif;
     */
-    font-size: 21px;
+    font-size: 30px;
 }
 .vitrina > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(5) > div:nth-of-type(3) > div:nth-of-type(2) > h2, .vitrina > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(6) > div:nth-of-type(3) > div:nth-of-type(2) > h2 {
    /* font: normal normal normal 24px/55% Aka-AcidGR-Compacta, sans-serif;
@@ -366,9 +366,10 @@
 .vitrina > div:nth-of-type(1) > div:nth-of-type(n+2) > div:nth-of-type(1) > ul > li {
     font: 300;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0 0 20px 0;
     font-size: 14px;
+    text-align: justify;
 }
 .vitrina > div:nth-of-type(1) > div:nth-of-type(n+2) > div:nth-of-type(1) > ul > li img {
     vertical-align: bottom;
@@ -385,7 +386,7 @@
 }
 .vitrina > div:nth-of-type(1) > div:nth-of-type(n+2) div:nth-of-type(2) {
     position: absolute;
-    width: 64%;
+    width: 100%;
     bottom: -11.25vh;
     left: 50%;
     transform: translate(-50%, 0);
@@ -537,7 +538,7 @@
         grid-column: 2;
     }
     .vitrina > div:nth-of-type(1) > div:nth-of-type(n+2) > div:nth-of-type(2) {
-        width: 40%;
+        width: 50%;
    }
 }
 @media (min-width: 1200px) {
@@ -546,7 +547,7 @@
         grid-template-rows: 1fr 1fr;
    }
    .vitrina > div:nth-of-type(1) > div:nth-of-type(n+2) > div:nth-of-type(2) {
-        width: 32%;
+        width: 60%;
     }
 }
 @media (min-width: 1366px) {
@@ -1250,7 +1251,7 @@
 .diapositivas > div > div > div:nth-of-type(2).diagonal > div.marcas > div {
     padding: 10px 0 0 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(81px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
     gap: 10px;
     white-space: nowrap;
     overflow-x: scroll;
