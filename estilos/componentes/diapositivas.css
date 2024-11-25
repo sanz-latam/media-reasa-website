@@ -1221,7 +1221,7 @@
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 71vw;
+    width: 85vw;
     height: auto;
     display: grid;
     grid-template-rows: max-content;
