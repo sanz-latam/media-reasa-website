@@ -1,11 +1,7 @@
 @font-face {
-    font-family: 'Aka-AcidGR-Compacta';
-    src:url('Aka-AcidGR-Compacta.ttf.woff') format('woff'),
-        url('Aka-AcidGR-Compacta.ttf.svg#Aka-AcidGR-Compacta') format('svg'),
-        url('Aka-AcidGR-Compacta.ttf.eot'),
-        url('Aka-AcidGR-Compacta.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
+ font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
     font-family: 'Likhari_B-Normal';
