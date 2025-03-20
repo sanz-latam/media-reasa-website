@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-/*@font-face {
- font-family: "Bebas Neue", sans-serif;
+@font-face {
+ font-family: "Space Grotesk", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -12,12 +12,13 @@
         url('Likhari_B-Normal.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
-}*/
+}
 * {
     /* font-family: 'WeezerFont', sans-serif; */
- font-family: "Bebas Neue", sans-serif;
+ font-family: "Space Grotesk",  sans-serif;
+ /*font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal;*/
     /* text-transform: uppercase; */
 }
 h2 {
