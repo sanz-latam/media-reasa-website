@@ -253,7 +253,7 @@
     background-size: cover;
 }
 .bosch > div:nth-of-type(2) > div:nth-of-type(1) > h1 {
-    font: normal normal normal 42px / 100% Aka-AcidGR-Compacta, sans-serif;
+    font: normal normal normal 42px / 100% "Bebas Neue", sans-serif;
     background: linear-gradient(90deg, #ae1919, #e75250, #9d1815);
     -webkit-background-clip: text;
     background-clip: text;
